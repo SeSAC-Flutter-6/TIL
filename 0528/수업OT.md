@@ -22,5 +22,5 @@
 - 매일 pull request
 - 풀리퀘 타이틀 양식 : 240528_03_박서윤
 - 본인 브랜치에 요청 
- ![](/images/수업OT/2024-05-28-19-32-21.png)
- ![](/images/수업OT/2024-05-28-19-33-06.png)
+ ![image](https://github.com/S-YUN/TIL/assets/65701497/afdf0cdf-0b65-43b2-a869-a933e8282ac5)
+ ![image](https://github.com/S-YUN/TIL/assets/65701497/7291f50e-98fb-4f7e-aa6b-4856c4da2951)
