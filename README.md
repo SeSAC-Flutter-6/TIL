@@ -3,9 +3,5 @@
 Today I Learned
 
 오늘 학습한 내용을 정리하는 것
-
-
-## 샘플
-- https://github.com/namjunemy/TIL
-- https://github.com/milooy/TIL
-- https://github.com/YutoMizutani/til
+---
+[24.05.28](https://github.com/hunhee98/TIL/blob/main/240528_09_%EC%9D%B4%ED%9B%88%ED%9D%AC.md)
