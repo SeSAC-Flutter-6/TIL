@@ -51,4 +51,5 @@
 
 
 ### 그러면 플러터에서 코드가 어떻게 화면이 될까?
-![image](https://github.com/S-YUN/TIL/assets/65701497/380a4052-1a1d-4b2e-b4df-b1ec4e7af9a1)
+<img src="https://github.com/S-YUN/TIL/assets/65701497/380a4052-1a1d-4b2e-b4df-b1ec4e7af9a1" width="50%" height="50%"/>
+
