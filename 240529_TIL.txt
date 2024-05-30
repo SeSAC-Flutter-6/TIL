@@ -1,0 +1,16 @@
+1. var: 타입추론
+final: 일반적 상수, 한번만 설정
+2. const: 컴파일 타임에 할당 완료
+final: 일반적 상수
+3. String, String? 둘은 타입이 다르다
+4. 런타임: 실행
+ 컴파일: 컴퓨터가 해석 가능한 언어로 변환(런타임보다 먼저)
+5. Null Safety
+6. 연산자 / double, ~/ int
+7. ?.: 예를 들어, var length = nullableString?.length;와 같이 사용할 수 O
+??: var result = nullableValue ?? defaultValue;와 같이 사용할 수 O
+8. late 쓰지 말것
+9. num 쓰기, int, double
+10. dynamic: 런타임에 프로그램이 변경될 수 있는 코드 - 쓰지 않기, 타입 x, 클래스 x
+ Object: 컴파일 타임에 타입 결정, 모든 타입을 담을 수 있는 타입, 상속 구조의 최상위 클래스
+11. list o,  array x
