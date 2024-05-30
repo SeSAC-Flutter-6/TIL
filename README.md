@@ -9,5 +9,3 @@ Today I Learned
 - https://github.com/namjunemy/TIL
 - https://github.com/milooy/TIL
 - https://github.com/YutoMizutani/til
-
-test 해봄
