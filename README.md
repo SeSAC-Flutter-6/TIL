@@ -9,3 +9,5 @@ Today I Learned
 [24.05.29 Dart Synstax Basics](https://github.com/hunhee98/TIL/blob/main/Dart_basics.md)
 <br>
 [24.05.30 Dart Collections Functions](https://github.com/hunhee98/TIL/blob/main/Dart_collections_functions.md)
+<br>
+[24.05.31 Dart Class](https://github.com/hunhee98/TIL/blob/main/Dart_class.md)
