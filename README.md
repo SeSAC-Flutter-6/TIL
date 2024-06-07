@@ -11,3 +11,7 @@ Today I Learned
 [24.05.30 Dart Collections Functions](https://github.com/hunhee98/TIL/blob/main/Dart_collections_functions.md)
 <br>
 [24.05.31 Dart Class](https://github.com/hunhee98/TIL/blob/main/Dart_class.md)
+<br>
+[24.06.04 Dart Constructors](https://github.com/hunhee98/TIL/blob/main/Dart_Constructor.md)
+<br>
+[24.06.05 Dart Encapsulation](https://github.com/hunhee98/TIL/blob/main/240605.md)
