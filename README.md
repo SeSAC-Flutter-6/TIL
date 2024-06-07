@@ -15,3 +15,5 @@ Today I Learned
 [24.06.04 Dart Constructors](https://github.com/hunhee98/TIL/blob/main/Dart_Constructor.md)
 <br>
 [24.06.05 Dart Encapsulation](https://github.com/hunhee98/TIL/blob/main/240605.md)
+<br>
+[24.06.07 Dart Inheritance](https://github.com/hunhee98/TIL/blob/main/Dart_Inheritance.md)
