@@ -11,3 +11,6 @@
 ### Go to Definition
 - vscode : fn + f12
 - vscode : cmd + 클릭
+
+### 같은 단어 한꺼번에 수정
+- vscode : cmd + shift + l
