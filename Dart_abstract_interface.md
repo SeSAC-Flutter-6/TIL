@@ -56,14 +56,14 @@ Swift의 Protocol은 프로퍼티와 메소드 모두 구현 요구사항으로 
 
 abstract class에서 field만 뺀 버전이다.
 
-다중 상속을 할 수 있다.
+다중 구현 할 수 있다.
 
-기능 별로 Interface를 구현해서 상속 받는 쪽에서 어떤 기능들을 구현하고 있는지 
+기능 별로 Interface를 정의하여 구현하는 쪽에서 어떤 기능들을 구현하고 있는지 
 의미론적으로도 명시하기 용이하다고 생각함.
 
 ### 구현 예시
 
-interface는 implements 키워드를 사용해서 상속한다.
+interface는 implements 키워드를 사용해서 구현한다.
 (근데 extends를 써도 동작은 됨..)
 
 ```dart
