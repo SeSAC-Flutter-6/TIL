@@ -17,3 +17,7 @@ Today I Learned
 [24.06.05 Dart Encapsulation](https://github.com/hunhee98/TIL/blob/main/240605.md)
 <br>
 [24.06.07 Dart Inheritance](https://github.com/hunhee98/TIL/blob/main/Dart_Inheritance.md)
+<br>
+[24.06.11 Dart abstract_interface](https://github.com/hunhee98/TIL/blob/main/Dart_abstract_interface.md)
+<br>
+[24.06.12 Dart Polymorphism](https://github.com/hunhee98/TIL/blob/main/Dart_polymorphism.md)
