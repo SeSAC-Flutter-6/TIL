@@ -1,2 +1,3 @@
 - Refactor = shift + F6
 - recently files = ctrl + shift + e / ctrl + e
+- Ctrl + f12 파일스트럭쳐
