@@ -1,0 +1,86 @@
+# Instance Control
+
+Date: 2024년 6월 13일
+
+Dart의 모든 클래스는 내부적으로 Object 클래스를 상속 받는다.
+따라서 toString, operator, hashCode 등의 대표적인 메서드와 프로퍼티를 지닌다.
+
+### operator ==
+
+```dart
+@override
+bool operator ==(Object other) =>
+	identical(this, other) ||
+	other is SomeType && runtieType == other.runtimeType
+```
+
+예를 들어 위처럼 비교 논리를 직접 재정의할 수 있다. 
+특정 프로퍼티끼리 동일하면 같도록 할 수도 있음.
+
+### Set, Map의 동작 원리
+
+모든 객체는 고유한 hashCode를 지님. hashCode는 해시 함수로 해싱되어 생성되는 코드임(비가역적)
+
+Set, Map은 내부적으로 HashTable을 사용하는데, 우선 단순하게 key는 hashcode, value는 실제 값이라고 생각하면 됨. 따라서 검색과 삽입, 삭제 속도가 매우 빠른 것.
+
+다만, key가 되는 hashcode가 해시 함수를 통해 생성되기 때문에 해시 함수의 의존도가 높다고 할 수 있을듯.
+
+### 정렬 규칙(sort)를 정의하는 Comparable 인터페이스
+
+List의 Sort 함수가 어떻게 동작할지, 각 요소의 우선 순위를 어떻게 판단할지 재정의할 수 있다.
+
+```dart
+class Person {
+	String name;
+	int age;
+	
+	@override
+  int compareTo(other) => age.compareTo(other.age);
+}
+```
+
+위 코드처럼, 특정 프로퍼티만을 가지고 객체 간의 정렬 우선 순위를 재정의할 수 있다.
+
+### Deep Copy
+
+객체의 깊은 복사. Heap Memory에 완전히 새로운 객체를 생성하는 방식.
+기존 객체의 값을 복사해서 완전히 새로운 메모리 공간에 생성함.
+
+```dart
+class Book implements Comparable {
+  final String title;
+  final DateTime publishDate;
+  final String comment;
+
+  Book({
+    required this.title,
+    required this.comment,
+    DateTime? publishDate,
+  }) : publishDate = publishDate ?? DateTime.now();
+
+  /// Book 인스턴스 복사하여 반환
+  /// 복사하는 동안 수정할 수 있음
+  Book copyWith({
+    String? title,
+    String? comment,
+    DateTime? publishDate,
+  }) {
+    return Book(
+        title: title ?? this.title,
+        comment: comment ?? this.comment,
+        publishDate: publishDate
+    );
+  }
+}
+```
+
+### 레퍼런스 타입 객체 찍먹…
+
+Dart는 모든 타입이 Reference Type이기 때문에 Heap memory에 생성되고
+주소 기반의 객체는 주소 값을 통해 공유되면서 동시성 문제를 유발할 수 있다.
+
+그러나? 다트는 기본적으로 싱글 스레드로 동작하기 때문에 사실상 걱정할 필요가 거의 없다.
+
+그럼에도 Deep Copy를 사용하는 이유는
+**레퍼런스 타입 객체**여도 **immutable**하게 관리하여 
+복사하는 동안만 수정을 허용하여 구조체의 이점을 가지려는 것이 아닌가 생각해본다.
