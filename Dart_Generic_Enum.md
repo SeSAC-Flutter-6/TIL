@@ -30,9 +30,22 @@ Swift도 제네릭 문법은 비슷함.
 ```dart
 enum NetworkError {
 	serverError,
-	
+	invalidRequest
 }
 ```
+
+데이터의 유형을 정의해둘 수 있음.
+
+```dart
+enum animalType {
+	초식동물,
+	육식동물
+}
+```
+
+### String과 StringBuffer
+Dart 언어에서 String은 immutable(불변적인)한 타입이다. 따라서 
+
 ## 느낀 점 
 
 ## 참고 자료
