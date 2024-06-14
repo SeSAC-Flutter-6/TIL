@@ -1,0 +1,86 @@
+# 인스턴스 기본 조작
+1. 모든 클래스는 Object 클래스의 메서드와 프로퍼티를 가지고 있다
+2. Object 타입 변수에는 모든 인스턴스를 대입할 수 있다
+
+## Object 클래스의 대표 메서드 및 프로퍼티
+- toString() : 문자열 표현을 얻음
+- operator == : 비교
+- hashCode : 해시값을 얻음
+
+## type hierethy 보기
+안드로이드 스튜디오: ctrl+h
+vscode: 
+
+## toString
+```dart
+class Hero extends Character {
+  Hero(super.name, super.hp);
+
+  @override
+  void attack(Monster monster) {
+    print('$name이 $monster를 공격했다.');
+    print('10의 데미지');
+    monster.hp -= 10;
+  }
+
+  @override
+  String toString() {
+    return 'Hero{}';
+  }
+}
+```
+- 원래는 hero.toString이지만 toString을 생략하고 사용하는 것이다
+- 기존 toString으로 사용했을 때는 `Instance of 'Hero'`가 출력된다
+- object도 string이나 int처럶 값을 그대로 출력하기 위해서 override로 재정의하여 사용한다
+
+## ==연산자
+```dart
+void main() {
+  final heroes = <Hero>[];
+  final h1 = Hero(name: '홍길동', hp: 100);
+  final h2 = Hero(name: '임꺽정', hp: 100);
+
+  heroes.add(h1);
+  print(heroes.length);
+  heroes.remove(h2);
+  print(heroes.length);
+}
+```
+- h1과 h2의 hashcode가 다르기 때문에 == 연산자는 이 둘을 서로 같다고 보지 않는다
+- 그러나 우리는 개발의 편의를 위하여 ==연산자를 override로 재정의하여 사용한다
+```dart
+@oveeride
+bool operator ==(Object other) =>
+    identical(this, other)||
+    other is Hero && runtimeType == other.runtimeType;
+```
+`identical`: hashcode가 서로 일치하는지 확인하는 함수
+`runtimeType`: 객체의 런타임 때의 타입
+
+## 동등성 비교시 주의할 점
+- 동등성을 비교할 때는 클래스 내부의 모든 속성의 동듬함을 비교해야 한다
+```dart
+class Hero{
+    static int money = 100;
+
+        String name;
+        int _hp;
+        Sword? sword;
+
+        override
+        bool operator ==(Object other) =>
+            identical(this, other) ||
+            other is Hero &&
+            runtimeType == other.runtimeType &&
+            name == other.name &&
+            sword == other.sword;
+
+        override
+        int get hashCode => name.hashCode ^ sword.hashCode;
+}
+```
+
+
+
+
+## hashcode
