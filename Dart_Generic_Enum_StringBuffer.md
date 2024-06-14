@@ -29,20 +29,31 @@ Swift도 제네릭 문법은 비슷함.
 예를 들면 에러를 정의한다거나
 ```dart
 enum NetworkError {
-	serverError,
-	invalidRequest
+  serverError,
+  invalidRequest
 }
 ```
 
 데이터의 유형을 정의해둘 수 있음.
-
 ```dart
 enum animalType {
-	초식동물,
-	육식동물
+  초식동물,
+  육식동물
 }
 ```
 
+Swift처럼 enum에 연관값을 지정해줄 수도 있다.
+```dart
+enum KeyType {  
+  padlock(1024),  
+  button(10000),  
+  dial(30000),  
+  finger(1000000);  
+  
+  final int limit;  
+  const KeyType(this.limit);  
+}
+```
 ### Mutator, Accessor
 Mutator: 원본을 수정하는 메서드
 Accessor: 수정된 사본을 반환하는 메서드
@@ -91,6 +102,8 @@ Collection Type에는 Array, Set, Dictionary가 있다.
 따라서 객체를 복사했지만, 사본에 아무런 수정이 일어나지 않았다면, 값 타입임에도 불구하고 새로운 객체를 생성하는 것이 아닌, 기존 객체를 재사용한다는 것이다.
 
 ## 참고 자료
+[https://dart.dev/language/enums](https://dart.dev/language/enums "https://dart.dev/language/enums")
+
 [Strings, Immutability, and Performance in Dart | by Amirbahrawy | Medium](https://medium.com/@amirbahrawy/strings-immutability-and-performance-in-dart-33081856fb17)
 
 [Understanding Swift Copy-on-Write mechanisms | by Luciano Almeida | Medium](https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-write-mechanisms-52ac31d68f2f)
