@@ -19,10 +19,8 @@ abstract interface class List<E> implements Iterable<E>, _ListIterable<E> {
 이 타입이 어떤 메소드, 프로퍼티를 갖고 있는지 알 수도 없고 정해지지도 않았기 때문.
 
 그래서 제네릭 문법은 대부분의 경우 제약 조건을 같이 주어야함.
-다시 위 List 내부 구현 코드를 보면, 클래스 선언부에서 제네릭 E 타입은 Interable, ListIterable 이라는 인터페이스를 구현하도록 강제하고 있음.
 
-따라서 외부에서 List 클래스를 생성할 때는 저 2가지 인터페이스를 준수하고 있는 클래스의 객체만 넣을 수 있는 것.
-
+### 열거형
 ## 느낀 점 
 
 ## 참고 자료
