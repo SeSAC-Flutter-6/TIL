@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dart_Generic_Enum.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dart_Generic_Enum.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dart_Generic_Enum.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dart_Generic_Enum.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,13 +146,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fec41770b49d6ce6",
+  "active": "e8c89025d2ba27c9",
   "lastOpenFiles": [
+    "Dart_Generic_Enum_StringBuffer.md",
+    "README.md",
     "template/{{title}}.md.md",
     "GitCommand&PullRequest.md",
     "240605.md",
-    "README.md",
-    "Dart_Generic_Enum.md",
     "Dart_Constructor.md",
     "Dart",
     "Dart_abstract_interface.md",

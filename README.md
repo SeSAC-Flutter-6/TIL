@@ -21,3 +21,7 @@ Today I Learned
 [24.06.11 Dart abstract_interface](https://github.com/hunhee98/TIL/blob/main/Dart_abstract_interface.md)
 <br>
 [24.06.12 Dart Polymorphism](https://github.com/hunhee98/TIL/blob/main/Dart_polymorphism.md)
+
+[24.06.13 Dart Instance control](https://github.com/hunhee98/TIL/blob/main/Dart_Instance_control)
+
+[24.06.14 Dart Generic Enum StringBuffer](https://github.com/hunhee98/TIL/blob/main/Dart_Generic_Enum.md)
