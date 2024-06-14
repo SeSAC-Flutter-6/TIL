@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "549c68b47f0b971c",
+        "id": "7f36ff24cc5e3abb",
         "type": "tabs",
         "children": [
           {
-            "id": "05f3c401aa3a5b87",
+            "id": "e8c89025d2ba27c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dart_abstract_interface.md",
+                "file": "template/{{title}}.md.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "template/{{title}}.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "template/{{title}}.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "무제 파일.md"
+                "file": "template/{{title}}.md.md"
               }
             }
           }
@@ -144,13 +146,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fec41770b49d6ce6",
+  "active": "e8c89025d2ba27c9",
   "lastOpenFiles": [
+    "GitCommand&PullRequest.md",
+    "template/{{title}}.md.md",
+    "240605.md",
+    "README.md",
+    "Dart_Generic_Enum.md",
+    "Dart_Constructor.md",
     "Dart",
     "Dart_abstract_interface.md",
-    "무제 파일.md",
-    "240605.md",
-    "template/{{title}}.md.md",
     "template"
   ]
 }
