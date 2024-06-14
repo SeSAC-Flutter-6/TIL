@@ -92,4 +92,5 @@ Collection Type에는 Array, Set, Dictionary가 있다.
 
 ## 참고 자료
 [Strings, Immutability, and Performance in Dart | by Amirbahrawy | Medium](https://medium.com/@amirbahrawy/strings-immutability-and-performance-in-dart-33081856fb17)
+
 [Understanding Swift Copy-on-Write mechanisms | by Luciano Almeida | Medium](https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-write-mechanisms-52ac31d68f2f)
