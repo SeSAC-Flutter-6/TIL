@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/{{title}}.md.md",
+                "file": "Dart_Generic_Enum.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "template/{{title}}.md.md",
+                "file": "Dart_Generic_Enum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "template/{{title}}.md.md",
+                "file": "Dart_Generic_Enum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "template/{{title}}.md.md"
+                "file": "Dart_Generic_Enum.md"
               }
             }
           }
@@ -146,10 +146,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e8c89025d2ba27c9",
+  "active": "fec41770b49d6ce6",
   "lastOpenFiles": [
-    "GitCommand&PullRequest.md",
     "template/{{title}}.md.md",
+    "GitCommand&PullRequest.md",
     "240605.md",
     "README.md",
     "Dart_Generic_Enum.md",

@@ -1,13 +1,7 @@
 published: {{Date}}
 
-1. [Summary](#summary)
-1. [Details](#details)
-1. [References](#references)
-1. [Reflections](#reflections)
-## Summary
+## 배운 것
 
-## Details
+## 느낀 점 
 
-## References
-
-## Reflections 
+## 참고 자료
