@@ -1,2 +1,4 @@
 - Refactor = shift + F6
 - recently files = ctrl + shift + e / ctrl + e
+- Ctrl + f12 = 파일스트럭쳐(모든 메서드를 볼 수 있다)
+- Ctrl + h  = 상속관계를 나타냄
