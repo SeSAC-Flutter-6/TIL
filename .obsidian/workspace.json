@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "1b7b25a6afa34477",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f36ff24cc5e3abb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8c89025d2ba27c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dart_Generic_Enum_StringBuffer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "26050f4222c84354",
+    "type": "split",
+    "children": [
+      {
+        "id": "a93d4fa10d8138fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fec41770b49d6ce6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "873cc556d272fce3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4b18030058a59222",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7f0f223540cd8ebe",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c963a7eec2c9d67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a647b5e5e213d62",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dart_Generic_Enum_StringBuffer.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6260f1b0c8018e99",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dart_Generic_Enum_StringBuffer.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d3d067d5731a0385",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "330021fc9a8925bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dart_Generic_Enum_StringBuffer.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "e8c89025d2ba27c9",
+  "lastOpenFiles": [
+    "README.md",
+    "Dart_Generic_Enum_StringBuffer.md",
+    "template/{{title}}.md.md",
+    "GitCommand&PullRequest.md",
+    "240605.md",
+    "Dart_Constructor.md",
+    "Dart",
+    "Dart_abstract_interface.md",
+    "template"
+  ]
+}
