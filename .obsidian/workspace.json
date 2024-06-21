@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "232b7f740e4a7ad5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "240621.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "240620.md",
+                "file": "240621.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "240620.md",
+                "file": "240621.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "240620.md"
+                "file": "240621.md"
               }
             }
           }
@@ -146,10 +159,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "54d547652b662c80",
+  "active": "232b7f740e4a7ad5",
   "lastOpenFiles": [
-    "240619.md",
     "240620.md",
+    "240621.md",
+    "240619.md",
     "Dart_Generic_Enum_StringBuffer.md",
     "README.md",
     "template/{{title}}.md.md",
