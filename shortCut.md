@@ -3,3 +3,5 @@
 - Ctrl + f12 = 파일스트럭쳐(모든 메서드를 볼 수 있다)
 - Ctrl + h  = 상속관계를 나타냄
 - alt + j = 다중문자 선택
+- android - help - find action - Regex 클릭하고 - //.*\n (모든 주석과 Enter까지 선택) - Replace All 하면 삭제
+- 
