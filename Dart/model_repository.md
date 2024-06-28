@@ -42,6 +42,7 @@ class RentCar2 {
 - 객체(데이터)에 대한 정보를 가지고 있는(조회하는) 클래스
 - 비지니스 로직이 없는 순수한 클래스
 - 비슷한 용어들 : 도메인 모델, Entity, DTO, POJO, VO, data class
+- 내부 field는 모두 final로 선언!
 
 ### 모델링 방법
 
@@ -60,3 +61,9 @@ class RentCar2 {
   - 확장을 고려하면 Repository를 Interface로 작성하여 추상화한다.
 - DataSource와 통신을 담당하는 객체를 캡슐화
 - RepositoryImpl에는 비지니스 로직이 들어가 있다.
+  - 비지니스 로직은 2가지로 나뉜다.
+    - repositoryImpl
+    - viewModel
+
+* repository에서 data를 받을 때 unmodified를 이용해 외부에서 수정이 불가능하게 만들자.
+  - 캡슐화와 추상화 특징!
