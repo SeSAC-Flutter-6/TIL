@@ -30,9 +30,67 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4967023030ac4cd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "240626.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "360ae8dee5a50f1f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
+          },
+          {
+            "id": "531c8b76c410d94f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "240627.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3d0f10f920ac3cfa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "240627.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "902eb699eba2a629",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "240628.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -98,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "240621.md",
+                "file": "240628.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "240621.md",
+                "file": "240628.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "240621.md"
+                "file": "240628.md"
               }
             }
           }
@@ -159,10 +217,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "232b7f740e4a7ad5",
+  "active": "902eb699eba2a629",
   "lastOpenFiles": [
-    "240620.md",
+    "240627.md",
+    "240628.md",
+    "무제 파일.md",
     "240621.md",
+    "240626.md",
+    "240620.md",
     "240619.md",
     "Dart_Generic_Enum_StringBuffer.md",
     "README.md",
