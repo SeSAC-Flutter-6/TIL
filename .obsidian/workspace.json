@@ -88,9 +88,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6246e65d1ac5c5c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "240703.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -156,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "240628.md",
+                "file": "240703.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "240628.md",
+                "file": "240703.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +208,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "240628.md"
+                "file": "240703.md"
               }
             }
           }
@@ -217,10 +229,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "902eb699eba2a629",
+  "active": "6246e65d1ac5c5c7",
   "lastOpenFiles": [
-    "240627.md",
     "240628.md",
+    "240703.md",
+    "240627.md",
     "무제 파일.md",
     "240621.md",
     "240626.md",
