@@ -20,3 +20,7 @@
 - extension 으로 분리하여 만들면, 추후 dto (무지성 작성한) 수정이 필요할 때 편리하다
 - Nullable 을 non-Nullable로 변환하는 것이 핵심
 - Dto 전체를 변환하는 것이 아니다. 필요한 부분만 변환하는 것이다.
+
+### JsonSerializable를 이욯할 때 equatable
+
+- 레거시 코드에서는 https://pub.dev/packages/equatable 처럼 equatable을 extend한 뒤 props를 통해 data class를 정의 해놨다. 참고하자
