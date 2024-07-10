@@ -16,6 +16,27 @@
 - keyboardType 으로 키보드타입을 제한할 수 있다(number, text등..)
 - validator:(value) {} 로 들어 오는 값을 판단 해서 조건식을 걸수도 있다
 - form키와 validate를 이용해서 elevatedButton등에 판정식을 넣을 수도 있다
+- onChanged(value){} 함수를 사용하면 값이 변할때마다 저장해 놓을 수가 있다
+
+```dart
+            TextFormField(
+                controller: _weightController,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: '몸무게',
+                ),
+                keyboardType: TextInputType.number,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return '몸무게를 입력해주세요';
+                  }
+
+                  return null;
+                },
+                onChanged: (value) => save(),
+              ),
+
+```
 
 ## stless vs stful
 
@@ -30,13 +51,12 @@ ex)
 
 ```dart
   Navigator.push
-  (
-  context,
-  MaterialPageRoute(builder:
+   (
+    context,
+    MaterialPageRoute(builder:
   (context) => $targetRoutes$(
-  )
-  )
-,
+   )
+  ),
 );
 
 ```
@@ -97,6 +117,7 @@ Future load() async {
 - 저장할 때 'height', 'weight' 는 key로 사용되고 key에는 'double.parse..'값이 저장이 되어있고
   그 key를 다시 불러오면 'double.parse..' 값을 로딩 할 수 있게 된다
 - 여기서 double?은 아무값도 안들어 올 수 있는데, 값이 들어오기 전에 로딩을 먼저 할 수도 있기 때문이다
+- parse대신 tryParse를 이용하면 ?? 일때 값을 설정 해놓을 수 있어서 값이 없어지는 에러를 방지할 수 있다
   
 ```dart
 @override
@@ -111,6 +132,7 @@ Future load() async {
   load() 메서드를 호출하면 강제적으로 먼저 값을 가지고 있는 상태에서 시작 할 수 있다.
   그리고 로드된 각 값을 넣어주기 위해서 if문을 이용해서 조건으로 
   키와 몸무게가 null값이 아니라면 시작할때 $height, $weight값을 가지고 시작하는 로직을 만들었다.
+  
   
 
 
