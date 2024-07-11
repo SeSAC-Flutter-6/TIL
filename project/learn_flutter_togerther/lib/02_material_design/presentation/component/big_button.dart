@@ -26,6 +26,16 @@ class _BigButtonState extends State<BigButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: widget.onTap,
+      onTapDown: (_) {
+        setState(() {
+          _isPressed = true;
+        });
+      },
+      onTapUp: (_) {
+        setState(() {
+          _isPressed = false;
+        });
+      },
       child: Container(
         width: double.infinity,
         height: 70,
@@ -39,6 +49,7 @@ class _BigButtonState extends State<BigButton> {
             Center(
               child: Text(
                 widget.title,
+                style: TextStyles.mediumTextRegular
               ),
             ),
             SizedBox(

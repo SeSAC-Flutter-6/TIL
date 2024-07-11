@@ -20,7 +20,7 @@ FoodRecipe _$FoodRecipeFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$FoodRecipe {
-  String get name => throw _privateConstructorUsedError;
+  String get title => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
   String get password => throw _privateConstructorUsedError;
 
@@ -36,7 +36,7 @@ abstract class $FoodRecipeCopyWith<$Res> {
           FoodRecipe value, $Res Function(FoodRecipe) then) =
       _$FoodRecipeCopyWithImpl<$Res, FoodRecipe>;
   @useResult
-  $Res call({String name, String email, String password});
+  $Res call({String title, String email, String password});
 }
 
 /// @nodoc
@@ -52,14 +52,14 @@ class _$FoodRecipeCopyWithImpl<$Res, $Val extends FoodRecipe>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = null,
+    Object? title = null,
     Object? email = null,
     Object? password = null,
   }) {
     return _then(_value.copyWith(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
               as String,
       email: null == email
           ? _value.email
@@ -81,7 +81,7 @@ abstract class _$$FoodRecipeImplCopyWith<$Res>
       __$$FoodRecipeImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String name, String email, String password});
+  $Res call({String title, String email, String password});
 }
 
 /// @nodoc
@@ -95,14 +95,14 @@ class __$$FoodRecipeImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = null,
+    Object? title = null,
     Object? email = null,
     Object? password = null,
   }) {
     return _then(_$FoodRecipeImpl(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
               as String,
       email: null == email
           ? _value.email
@@ -120,13 +120,13 @@ class __$$FoodRecipeImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$FoodRecipeImpl implements _FoodRecipe {
   const _$FoodRecipeImpl(
-      {required this.name, required this.email, required this.password});
+      {required this.title, required this.email, required this.password});
 
   factory _$FoodRecipeImpl.fromJson(Map<String, dynamic> json) =>
       _$$FoodRecipeImplFromJson(json);
 
   @override
-  final String name;
+  final String title;
   @override
   final String email;
   @override
@@ -134,7 +134,7 @@ class _$FoodRecipeImpl implements _FoodRecipe {
 
   @override
   String toString() {
-    return 'FoodRecipe(name: $name, email: $email, password: $password)';
+    return 'FoodRecipe(title: $title, email: $email, password: $password)';
   }
 
   @override
@@ -142,7 +142,7 @@ class _$FoodRecipeImpl implements _FoodRecipe {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$FoodRecipeImpl &&
-            (identical(other.name, name) || other.name == name) &&
+            (identical(other.title, title) || other.title == title) &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.password, password) ||
                 other.password == password));
@@ -150,7 +150,7 @@ class _$FoodRecipeImpl implements _FoodRecipe {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, name, email, password);
+  int get hashCode => Object.hash(runtimeType, title, email, password);
 
   @JsonKey(ignore: true)
   @override
@@ -168,7 +168,7 @@ class _$FoodRecipeImpl implements _FoodRecipe {
 
 abstract class _FoodRecipe implements FoodRecipe {
   const factory _FoodRecipe(
-      {required final String name,
+      {required final String title,
       required final String email,
       required final String password}) = _$FoodRecipeImpl;
 
@@ -176,7 +176,7 @@ abstract class _FoodRecipe implements FoodRecipe {
       _$FoodRecipeImpl.fromJson;
 
   @override
-  String get name;
+  String get title;
   @override
   String get email;
   @override

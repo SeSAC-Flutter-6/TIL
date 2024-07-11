@@ -7,7 +7,7 @@ part 'food_recipe.g.dart';
 @freezed
 class FoodRecipe with _$FoodRecipe {
   const factory FoodRecipe({
-    required String name,
+    required String title,
     required String email,
     required String password,
 
