@@ -33,6 +33,7 @@ class IngredientItem extends StatelessWidget {
                       ingredient.imageUrl,
                     ),
                   ),
+
                   const SizedBox(
                     width: 25,
                   ),
