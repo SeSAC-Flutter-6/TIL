@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/component/big_button.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -89,6 +90,7 @@ class SignUpScreen extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+            BigButton(title: 'Sign in', onTap: () {}),
             Container(
               height: 70,
               decoration: BoxDecoration(
