@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/ui/color_styles.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/component/ui/text_styles.dart';
 
 class BigButton extends StatefulWidget {
+  //data
   final void Function() onTap;
 
   final String title;
@@ -17,7 +19,8 @@ class BigButton extends StatefulWidget {
 }
 
 class _BigButtonState extends State<BigButton> {
-  final bool _isPressed = false;
+  //ui
+  bool _isPressed = false;
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +28,24 @@ class _BigButtonState extends State<BigButton> {
       onTap: widget.onTap,
       child: Container(
         width: double.infinity,
-        height: 50,
-        child: Text('Sign In'),
+        height: 70,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: _isPressed ? ColorStyles.gray4 : ColorStyles.primary100,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Text(
+                widget.title,
+              ),
+            ),
+            SizedBox(
+              width: 35,
+            ),
+            Icon(Icons.arrow_forward),
+          ],
         ),
       ),
     );

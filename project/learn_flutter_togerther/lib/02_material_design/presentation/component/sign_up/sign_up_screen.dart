@@ -91,31 +91,6 @@ class SignUpScreen extends StatelessWidget {
               height: 20,
             ),
             BigButton(title: 'Sign in', onTap: () {}),
-            Container(
-              height: 70,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.green,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Sign in',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Icon(
-                    Icons.arrow_forward,
-                    color: Colors.white,
-                  ),
-                ],
-              ),
-            ),
           ],
         ),
       ),
