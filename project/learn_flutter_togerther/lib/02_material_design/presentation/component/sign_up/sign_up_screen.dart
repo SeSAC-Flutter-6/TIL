@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/big_button.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/component/sns_login_items.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -92,19 +93,16 @@ class SignUpScreen extends StatelessWidget {
             ),
             BigButton(title: 'Sign in', onTap: () {}),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
-              height: 10.0,
-              color: Colors.grey,
+              height: 1.0,
+              color: Colors.grey[300],
             ),
-Container(
-  child: Row(
-    children: [
-      Container(),
-    ],
-  ),
-)
+            SizedBox(
+              height: 20,
+            ),
+            SnsLoginItems(),
           ],
         ),
       ),
