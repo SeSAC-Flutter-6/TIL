@@ -13,96 +13,126 @@ class SignUpScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
-            Text(
+            const Text(
               'Hello',
               style: TextStyle(
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Text(
+            const Text(
               'Welcome Back!',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Text('Email'),
-            SizedBox(
+            const Text('Email'),
+            const SizedBox(
               height: 10,
             ),
             TextField(
               decoration: InputDecoration(
                 hintText: 'Enter Email',
-                hintStyle: TextStyle(
+                hintStyle: const TextStyle(
                   color: Colors.grey,
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.grey,
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.grey,
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Text('Enter Password'),
-            SizedBox(
+            const Text('Enter Password'),
+            const SizedBox(
               height: 10,
             ),
             TextField(
               decoration: InputDecoration(
                 hintText: 'Enter Password',
-                hintStyle: TextStyle(
+                hintStyle: const TextStyle(
                   color: Colors.grey,
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.grey,
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.grey,
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text('Forgot Password?'),
-            SizedBox(
+            const Text('Forgot Password?'),
+            const SizedBox(
               height: 20,
             ),
             BigButton(title: 'Sign in', onTap: () {}),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 1.0,
+                  color: Colors.grey[300],
+                ),
+                const Text(
+                  ' Or Sign in With ',
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
+                Container(
+                  height: 1.0,
+                  color: Colors.grey[300],
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const SnsLoginItems(),
             Container(
-              height: 1.0,
-              color: Colors.grey[300],
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            SnsLoginItems(),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('''Don'have an acount?'''),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    'Sign up',
+                    style: TextStyle(color: Colors.amberAccent),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),

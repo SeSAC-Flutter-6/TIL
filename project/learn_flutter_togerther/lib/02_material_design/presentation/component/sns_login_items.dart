@@ -7,9 +7,22 @@ class SnsLoginItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(width: 50,height: 50,),
-          SizedBox(width: 50, height: 50,),
+          Container(
+            child: Image.asset(
+              'asset/images/googleIconButton.png',
+            ),
+            width: 50,
+            height: 50,
+          ),
+          Container(
+            child: Image.asset(
+              'asset/images/faceBookIconButton.png',
+            ),
+            width: 50,
+            height: 50,
+          ),
         ],
       ),
     );
