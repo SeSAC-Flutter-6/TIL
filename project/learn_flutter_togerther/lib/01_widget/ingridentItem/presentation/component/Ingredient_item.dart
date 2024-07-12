@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../model/ingredient.dart';
 
 class IngredientItem extends StatelessWidget {
@@ -33,7 +32,6 @@ class IngredientItem extends StatelessWidget {
                       ingredient.imageUrl,
                     ),
                   ),
-
                   const SizedBox(
                     width: 25,
                   ),
@@ -47,12 +45,10 @@ class IngredientItem extends StatelessWidget {
                   const Spacer(),
                   Text(
                     style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.black26
-                    ),
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black26),
                     ingredient.weight,
-
                   ),
                 ],
               ),

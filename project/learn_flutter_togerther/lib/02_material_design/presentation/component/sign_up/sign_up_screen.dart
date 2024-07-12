@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/big_button.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/sns_login_items.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/component/textField_item.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/ui/color_styles.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/ui/text_styles.dart';
-
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -19,46 +19,20 @@ class SignUpScreen extends StatelessWidget {
             const SizedBox(
               height: 60,
             ),
-            const Text(
-              'Hello',
-              style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-              ),
+            Text(
+              'Hello,',
+              style: TextStyles.headerTextBold,
             ),
-            const Text(
+            Text(
               'Welcome Back!',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyles.headerTextRegular
             ),
             const SizedBox(
               height: 40,
             ),
-            const Text('Email'),
-            const SizedBox(
-              height: 10,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter Email',
-                hintStyle: const TextStyle(
-                  color: Colors.grey,
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(
-                    color: Colors.grey,
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(
-                    color: Colors.grey,
-                  ),
-                ),
-              ),
+
+            Container(
+              child: const TextfieldItem(),
             ),
             const SizedBox(
               height: 40,
@@ -90,11 +64,16 @@ class SignUpScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const Text('Forgot Password?'),
+            Text(
+              'Forgot Password?',
+              style: TextStyles.smallerTextRegular.copyWith(
+                color: ColorStyles.secondary100,
+              ),
+            ),
             const SizedBox(
               height: 20,
             ),
-            BigButton(title: 'Sign in', onTap: () {}),
+            BigButton(title: 'Sign In', onTap: () {}),
             const SizedBox(
               height: 20,
             ),

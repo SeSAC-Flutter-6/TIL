@@ -3,9 +3,9 @@ import 'package:learn_flutter_togerther/02_material_design/presentation/ui/color
 import 'package:learn_flutter_togerther/02_material_design/presentation/ui/text_styles.dart';
 
 class BigButton extends StatefulWidget {
-  //data
   final void Function() onTap;
 
+  //data
   final String title;
 
   const BigButton({
@@ -47,13 +47,15 @@ class _BigButtonState extends State<BigButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
-              child: Text(widget.title,
-                  style: TextStyles.mediumTextRegular.copyWith(
-                    color: ColorStyles.white,
-                  )),
+              child: Text(
+                widget.title,
+                style: TextStyles.mediumTextBold.copyWith(
+                  color: ColorStyles.white,
+                ),
+              ),
             ),
             SizedBox(
-              width: 30,
+              width: 40,
             ),
             Icon(
               Icons.arrow_forward,
