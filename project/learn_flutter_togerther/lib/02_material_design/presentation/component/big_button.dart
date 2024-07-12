@@ -49,11 +49,8 @@ class _BigButtonState extends State<BigButton> {
             Center(
               child: Text(
                 widget.title,
-                style: TextStyles.mediumTextRegular
+                //style: TextStyles.mediumTextRegular
               ),
-            ),
-            SizedBox(
-              width: 35,
             ),
             Icon(Icons.arrow_forward),
           ],
