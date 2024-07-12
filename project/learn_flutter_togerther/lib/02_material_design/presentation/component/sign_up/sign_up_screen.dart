@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/big_button.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/sns_login_items.dart';
-import 'package:learn_flutter_togerther/02_material_design/presentation/component/textField_item.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/component/input_text.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/ui/color_styles.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/ui/text_styles.dart';
 
@@ -23,44 +23,27 @@ class SignUpScreen extends StatelessWidget {
               'Hello,',
               style: TextStyles.headerTextBold,
             ),
-            Text(
-              'Welcome Back!',
-              style: TextStyles.headerTextRegular
-            ),
+            Text('Welcome Back!', style: TextStyles.headerTextRegular),
             const SizedBox(
               height: 40,
             ),
-
             Container(
-              child: const TextfieldItem(),
+              child: InputTextField(
+                inputTitle: 'Email',
+                hintText: 'Enter Email',
+              ),
             ),
             const SizedBox(
               height: 40,
             ),
-            const Text('Enter Password'),
             const SizedBox(
               height: 10,
             ),
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter Password',
-                hintStyle: const TextStyle(
-                  color: Colors.grey,
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(
-                    color: Colors.grey,
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(
-                    color: Colors.grey,
-                  ),
-                ),
-              ),
-            ),
+            Container(
+                child: InputTextField(
+              inputTitle: 'Enter Password',
+              hintText: 'Enter password',
+            )),
             const SizedBox(
               height: 20,
             ),

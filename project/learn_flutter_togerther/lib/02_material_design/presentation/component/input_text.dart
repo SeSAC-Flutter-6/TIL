@@ -2,22 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/ui/color_styles.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/ui/text_styles.dart';
 
-class TextfieldItem extends StatefulWidget {
-  const TextfieldItem({super.key});
+class InputTextField extends StatefulWidget {
+  //data
+  final String inputTitle;
+  final String hintText;
+
+  const InputTextField({
+    super.key,
+    required this.inputTitle,
+    required this.hintText,
+  });
 
   @override
-  State<TextfieldItem> createState() => _TextfieldItemState();
+  State<InputTextField> createState() => _InputTextFieldState();
 }
 
-class _TextfieldItemState extends State<TextfieldItem> {
+class _InputTextFieldState extends State<InputTextField> {
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: <Widget>[
           Text(
-            'Email',
+            widget.inputTitle,
             style: TextStyles.smallTextRegular,
           ),
           const SizedBox(
@@ -25,7 +33,7 @@ class _TextfieldItemState extends State<TextfieldItem> {
           ),
           TextField(
             decoration: InputDecoration(
-              hintText: 'Enter Email',
+              hintText: widget.hintText,
               hintStyle: TextStyles.smallerTextRegular.copyWith(
                 color: ColorStyles.gray4,
               ),
