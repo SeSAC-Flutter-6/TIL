@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/big_button.dart';
 import 'package:learn_flutter_togerther/02_material_design/presentation/component/sns_login_items.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/ui/color_styles.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/ui/text_styles.dart';
+
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -99,17 +102,17 @@ class SignUpScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: 1.0,
+                  height: 3.0,
                   color: Colors.grey[300],
                 ),
                 const Text(
                   ' Or Sign in With ',
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: ColorStyles.gray4,
                   ),
                 ),
                 Container(
-                  height: 1.0,
+                  height: 3.0,
                   color: Colors.grey[300],
                 ),
               ],
@@ -119,17 +122,24 @@ class SignUpScreen extends StatelessWidget {
             ),
             const SnsLoginItems(),
             Container(
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('''Don'have an acount?'''),
+                  Text(
+                    '''Don't have an account?''',
+                    style: TextStyles.smallerTextRegular.copyWith(
+                      color: ColorStyles.primary100,
+                    ),
+                  ),
                   SizedBox(
                     width: 10,
                   ),
                   Text(
                     'Sign up',
-                    style: TextStyle(color: Colors.amberAccent),
-                  )
+                    style: TextStyles.smallerTextRegular.copyWith(
+                      color: ColorStyles.primary100,
+                    ),
+                  ),
                 ],
               ),
             )

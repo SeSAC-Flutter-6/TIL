@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 abstract class ColorStyles {
   static const Color black = Color(0xFF000000);

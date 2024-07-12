@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_togerther/02_material_design/presentation/component/ui/color_styles.dart';
-import 'package:learn_flutter_togerther/02_material_design/presentation/component/ui/text_styles.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/ui/color_styles.dart';
+import 'package:learn_flutter_togerther/02_material_design/presentation/ui/text_styles.dart';
 
 class BigButton extends StatefulWidget {
   //data
@@ -47,12 +47,18 @@ class _BigButtonState extends State<BigButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
-              child: Text(
-                widget.title,
-                //style: TextStyles.mediumTextRegular
-              ),
+              child: Text(widget.title,
+                  style: TextStyles.mediumTextRegular.copyWith(
+                    color: ColorStyles.white,
+                  )),
             ),
-            Icon(Icons.arrow_forward),
+            SizedBox(
+              width: 30,
+            ),
+            Icon(
+              Icons.arrow_forward,
+              color: ColorStyles.white,
+            ),
           ],
         ),
       ),
